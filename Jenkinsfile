@@ -11,6 +11,8 @@ pipeline {
              
           }
         }
+        
+        /******
          stage('Tools Init') {
             steps {
                 script {
@@ -23,7 +25,7 @@ pipeline {
             }
             }
         }
-     
+     *********/
         
          stage('Execute Maven') {
            steps {
