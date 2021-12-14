@@ -38,7 +38,7 @@ pipeline {
              
             steps {
                  
-           sh "ansible-playbook main.yml -i inventories/dev/hosts --user azureuser --key-file /home/azureuser/.ssh/id_rsa"
+           sh "ansible-playbook main.yml -i inventories/dev/hosts --user jenkins --key-file ~/.ssh/id_rsa"
 }
 }
         
