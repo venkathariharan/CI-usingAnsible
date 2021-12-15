@@ -12,9 +12,14 @@ pipeline {
           }
         }
         
-       
+       stage('Terraform Infrastructure deployment') {
+           steps {
+             
+               sh "echo execute Terraform Infrastructure deployment"             
+          }
+        }
         
-         stage('Execute Maven') {
+         stage('Code Build') {
            steps {
              
                sh "echo execute code build"             
